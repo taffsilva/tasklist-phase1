@@ -77,7 +77,8 @@ jobs:
       contents: read
       packages: write
       id-token: write
-
+    needs: security-scan
+    
     steps:    
       # Login in a Docker registry
       # https://github.com/docker/login-action
